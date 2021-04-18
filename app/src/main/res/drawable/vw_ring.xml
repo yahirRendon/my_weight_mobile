@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Create Ring Shape-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Create transparent fill-->
+    <solid
+        android:color= "#00000000" />
+
+    <!-- Create outline stroke-->
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+
+    <!-- Set size of ring-->
+    <size
+        android:height="80dp"
+        android:width="80dp" />
+
+</shape>

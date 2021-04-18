@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:columnCount="4">
+
+    <ImageButton
+        android:id="@+id/button_edit_data"
+        android:background="@drawable/ic_edit_white_24"
+        android:backgroundTint="@color/colorSeafoam"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:text="date" />
+
+    <TextView
+        android:id="@+id/text_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="5dp"
+        android:text="weight" />
+
+    <ImageButton
+        android:id="@+id/button_del_data"
+        android:background="@drawable/ic_delete_white_24"
+        android:backgroundTint="@color/colorCoralLight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="right" />
+
+</GridLayout>

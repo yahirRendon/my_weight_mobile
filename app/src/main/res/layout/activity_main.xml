@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Custom navigation bar-->
+    <GridLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/medium"
+        android:columnCount="3">
+
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_person_white_24"
+            android:backgroundTint="@color/colorGrayLight" />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_title"
+            android:textSize="@dimen/text_medium"
+            app:elevation="6dp" />
+
+        <ImageButton
+            android:id="@+id/button_settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_settings_white_24"
+            android:backgroundTint="@color/colorGrayLight"
+            app:elevation="6dp" />
+
+    </GridLayout>
+
+    <!-- Dashboard elements -->
+    <GridLayout
+        android:id="@+id/dash_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginBottom="@dimen/medium"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/text_current_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/vw_ring_view"
+            android:backgroundTint="@color/colorSeafoam"
+            android:gravity="center"
+            android:text="150"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/text_diff_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/vw_ring_view"
+            android:backgroundTint="@color/colorSeafoam"
+            android:gravity="center"
+            android:text="-5"
+            android:textColor="@color/colorCoralDark"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/text_target_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/vw_ring_view"
+            android:backgroundTint="@color/colorSeafoam"
+            android:gravity="center"
+            android:text="155"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_current_weight"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_target_weight"
+            android:textSize="@dimen/text_small" />
+
+        <ProgressBar
+            android:id="@+id/progBar_target"
+            style="@style/ProgressBar"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:max="100"
+            android:min="0"
+            android:minHeight="@dimen/medium"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/text_dataTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/large"
+            android:text="@string/main_dataTitle"
+            android:textSize="@dimen/text_medium" />
+
+    </GridLayout>
+
+    <!-- Recycler View-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_weight_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/dash_bar" />
+
+    <!-- Footer bar-->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_add_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/medium"
+            android:backgroundTint="@color/colorCoralDark"
+            android:src="@drawable/ic_add_white_24"
+            app:pressedTranslationZ="@dimen/medium"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

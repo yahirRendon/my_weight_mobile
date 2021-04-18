@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Weight</string>
+    <!-- Login Activity -->
+    <string name="login_error">Login Error </string>
+    <string name="login_loginButton">Login</string>
+    <string name="login_createAcct_button">Create Account</string>
+
+    <!-- Main Activity -->
+    <string name="main_title">My Weight</string>
+    <string name="main_current_weight">Current Weight</string>
+    <string name="main_target_weight">Target Weight</string>
+    <string name="main_dataTitle">Enter Your Current Weight</string>
+    <string name="main_goal_achieved_toast">Congratulations, goal met! Set a new goal weight in your profile.</string>
+    <string name="main_goal_achieved_sms">Congratulations, you\'ve reached your goal weight! Please set a new target weight in your profile.</string>
+    <string name="main_weight_added_toast">New Weight Added</string>
+    <string name="main_invalid_weight_toast">Invalid Weight</string>
+    <string name="main_entryDelete_toast">Entry Deleted</string>
+    <string name="main_alert_UpdateWeight">Update Weight Value</string>
+    <string name="main_alert_updateButton">Update</string>
+    <string name="main_entryModified_toast">Entry Modified</string>
+    <string name="main_invalidWeight_toast">Invalid Weight</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_createAcct_instruction">Complete profile fields to\ncreate account.</string>
+    <string name="profile_updateProfile_instruction">Change information fields to\nto update profile</string>
+    <string name="profile_created_toast">Profile Created</string>
+    <string name="profile_errorCreating_toast">Error Creating Profile</string>
+    <string name="profile_phoneInvalid_toast">Phone Invalid</string>
+    <string name="profile_noUpdate_toast">Nothing to Update</string>
+    <string name="profile_updated_toast">Profile Updated</string>
+    <string name="profile_errorUpdate_toast">Error Updating Profile</string>
+
+</resources>

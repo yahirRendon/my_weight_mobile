@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Create Circle Shape-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Set to solid fill-->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Set size-->
+    <size
+        android:height="60dp"
+        android:width="60dp" />
+
+</shape>
